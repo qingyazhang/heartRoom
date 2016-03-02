@@ -1,0 +1,749 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #3a404d;
+    font: 14px/1.43 "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+}
+
+
+/*链接*/
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3a404d;
+    text-align: center;
+}
+
+a:hover {
+    color: #2690FE;
+    /*绿色*/
+}
+#div_head_title{
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top:30px;
+    margin: 0 auto;
+    z-index: 100;
+    left: 50%;
+    margin-left: -200px;
+}
+#head_title{
+font-family: KaiTi;
+line-height: 1em;
+color: #fff9d6;
+font-weight:bold;
+font-size: 49px;
+text-shadow:0px 0px 0 rgb(231,231,231),1px 1px 0 rgb(216,216,216),2px 2px 0 rgb(202,202,202),3px 3px 0 rgb(187,187,187),4px 4px 0 rgb(173,173,173),5px 5px 0 rgb(158,158,158), 6px 6px 0 rgb(144,144,144),7px 7px 6px rgba(0,0,0,0.6),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
+
+
+#div_head{
+position: relative;
+}
+/*头部背景图片*/
+
+#div_head_bg {
+    width: 100%;
+    height: 300px;
+}
+
+
+/*头部用户信息*/
+
+#div_head_user {
+    width: 500px;
+    height: 200px;
+    top:100px;
+    left: 50%;
+    margin-left: -250px;
+    position: absolute;
+    text-align: center;
+    /*针对子元素*/
+}
+ #btn_unread_msg_num{
+    position: absolute;
+    border-radius:50%;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    padding:5px;
+    right: 160px;
+    box-shadow: 0 0 10px #d8d9db;
+ }
+  #btn_unread_msg_num:hover{
+    box-shadow: 0 0 20px white;
+    color: gray;
+  }
+#head_user_pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    box-shadow: 0 5px 6px #d8d9db;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: crosshair;
+}
+#head_user_pic:hover{
+    box-shadow: 0 0 100px 10px #d8d9db;
+}
+
+#head_username {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+#signature {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#login {
+    margin-right: 30px;
+    color: #fff;
+}
+
+#logout {
+    color: #fff;
+}
+
+#register {
+    margin-left: 30px;
+    color: #fff;
+}
+
+#login:hover, #logout:hover, #register:hover {
+    color: #2690FE;
+}
+
+
+/*左下角背景音乐*/
+
+#div_bg_music {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+#music{
+    width: 450px;
+    margin-left: -400px;
+}
+#music:hover{
+    margin-left: 0px;
+}
+
+
+/*全屏掩盖层*/
+
+#div_mask {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*浮动层头部*/
+
+.div_float {
+    border: 1px solid gray;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    border-radius: 10px;
+    z-index: 10000;
+}
+
+.div_float_head {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.div_float_head_close{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #686D77;
+    color: black;
+    right: 10px;
+    z-index: 10001;
+    top:5px;
+    background-color: white;
+}
+.div_float_head_close:hover{
+    background-color: gray;
+    color:red;
+}
+.div_float_head_close:active{
+    color:white;
+}
+
+/*登陆表单*/
+#form_login{
+    text-align: center;
+}
+#login_username{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+#login_password{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#div_remember{
+    float: right;
+    margin-right: 20px;
+}
+#remember_text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+#btn_login{
+  color: white;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding-top: 5px;
+  text-align: center;
+  background: #686D77;
+  border: 1px solid #686D77;
+  box-shadow: 0px 2px 0 #686D77, 2px 4px 6px #686D77;
+}
+#btn_login:hover {
+  background: #5A5E68;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  text-shadow: -1px -1px 0 #5A5E68;
+}
+#btn_login:active{
+    color: purple;
+}
+#login_hint{
+    color: red;
+    margin-top: 0px;
+}
+.turn_retrievePassword{
+    display: block;
+    margin-top: 5px;
+}
+.turn_regester{
+    display: block;
+    margin-top: 5px;
+}
+
+/*注册表单*/
+#form_register{
+    text-align: center;
+}
+#register_username{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+#register_password{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#register_re_password{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#register_email{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#male{
+}
+#female{
+    margin-left: 50px;
+}
+#btn_register{
+  color: white;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding-top: 5px;
+  text-align: center;
+  background: #686D77;
+  border: 1px solid #686D77;
+  box-shadow: 0px 2px 0 #686D77, 2px 4px 6px #686D77;
+}
+#btn_register:hover {
+  background: #5A5E68;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  text-shadow: -1px -1px 0 #5A5E68;
+}
+#btn_register:active{
+    color: purple;
+}
+#register_hint{
+    color: red;
+    margin-top: 0px;
+}
+.turn_login{
+    display: block;
+    margin-top: 5px;
+}
+
+/*重置密码表单*/
+#form_reset_password{
+    text-align: center;
+}
+#reset_password_username{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+#reset_password_password{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#reset_password_re_password{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#reset_password_email{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+#btn_reset_password{
+  color: white;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding-top: 5px;
+  text-align: center;
+  background: #686D77;
+  border: 1px solid #686D77;
+  box-shadow: 0px 2px 0 #686D77, 2px 4px 6px #686D77;
+}
+#btn_reset_password:hover {
+  background: #5A5E68;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  text-shadow: -1px -1px 0 #5A5E68;
+}
+#btn_reset_password:active{
+    color: purple;
+}
+#reset_password_hint{
+    color: red;
+    margin-top: 0px;
+}
+
+/*头部按钮*/
+ #div_head_tab {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+ }
+
+ #div_head_btn {
+    min-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+     font-size: 24px;
+     line-height: 50px;
+     text-align: center;
+     box-shadow: 0 5px 6px #d8d9db;
+     border: 1px solid #d8d9db;
+ }
+ .btn_tab {
+     display: inline-block;
+     vertical-align: middle;
+     width: 115px;
+     text-align: center;
+     padding-top: 4px;
+     padding-bottom: 6px;
+ }
+ .btn_tab:hover{
+    border-top: 2px solid #2690FE;
+    border-bottom: 2px solid #2690FE;
+    letter-spacing: 2px;
+    color: #2690FE;
+ }
+
+/*分隔线*/
+.line {
+    width: 100%;
+    height: 0px;
+    border: 1px solid gray;
+    font: 14px/1.43 "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+}
+/*用户信息层*/
+#div_user_info{
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    margin-top: -300px;
+    margin-left: -300px;
+
+}
+#div_user_info_container{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
+#user_info_head_pic{
+    width: 100px;
+    margin:0 auto;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 5px #d8d9db;
+}
+#user_info_head_pic:hover{
+    box-shadow: 0 0 30px 5px #d8d9db;
+    border: 1px solid gray;
+}
+#user_info_title{
+    color: #ccc;
+    text-shadow: -1px -1px #fff, 1px 1px #333;
+}
+#user_info_username{
+    font: 14px/1.43 "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    color: #fafafa;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    margin: 10px;
+    font-size: 20px;
+}
+#user_info_table{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    box-shadow: 20px -10px 20px #d8d9db, -10px 0px 20px #d8d9db;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+    margin:0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    table-layout:fixed;
+}
+#user_info_table tr{
+    line-height: 35px;
+}
+
+#user_info_table td{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1),0 1px 3px rgba(0,0,0,0.3),0 3px 5px rgba(0,0,0,0.2),0 5px 10px rgba(0,0,0,0.25);
+}
+#user_info_signature{
+
+
+}
+#user_info_shield_text{
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#user_info_shield_num{
+color: #f00;
+    text-shadow: 1px 1px 0px #212121;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+#btn_user_info_shield{
+    display: inline-block;
+    box-sizing:border-box;
+    vertical-align: middle;
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 28px;
+    width: 80px;
+    line-height: 25px;
+    border:1px solid white;
+    box-shadow: -3px 5px 10px #d8d9db;
+
+    background: #d3d3d3;
+    color: white;
+    border-radius: 5px;
+}
+#btn_user_info_shield:hover{
+  background: #686D77;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  text-shadow: -1px -1px 0 #5A5E68;
+  color: white;
+}
+#btn_user_info_shield:active{
+    color:white;
+}
+/*container*/
+.container{
+    min-width: 800px;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid gray;
+    border-top: 2px solid #000;
+    min-height: 800px;
+    height: auto;
+    text-align: center;
+}
+#div_public_container{
+
+}
+#div_me_container{
+
+}
+#div_personal_container{
+
+}
+
+
+/*bug*/
+#bug_textarea{
+    display: block;
+    width: 80%;
+    height: 180px;
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px;
+    font-size: 18px;
+    box-shadow: 0 5px 6px #d8d9db;
+    text-indent: 1em;
+}
+#buger_contact{
+    width: 80%;
+    height: 25px;
+    margin:0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding:5px;
+    font-size: 16px;
+    box-shadow: 0 5px 6px #d8d9db;
+}
+#btn_submit_bug{
+    display: block;
+    vertical-align: middle;
+    height: 28px;
+    width: 200px;
+    line-height: 30px;
+    border:1px solid gray;
+    box-shadow: -3px 5px 10px #d8d9db;
+    background: #686D77;
+    color: white;
+    border-radius: 5px;
+    margin:0 auto;
+    vertical-align: middle;
+    margin-top: 30px;
+    text-shadow: -1px -1px 0 #5A5E68;
+}
+#btn_submit_bug:hover{
+  background: white;
+  border: 1px solid #d8d9db;
+  box-shadow: 0px 10px 20px #d8d9db;
+  text-shadow: -1px -1px 1px #5A5E68;
+  color: gray;
+}
+#btn_submit_bug:active{
+    color:white;
+}
+/*页脚*/
+footer{
+    background:#d8d9db;
+    margin:0 auto;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font: 14px/1.43 "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    box-shadow: 0 -10px 10px #d8d9db,0 -10px 5px #2690FE, 10px 10px 15px #d8d9db inset , -10px 10px 15px #d8d9db inset ;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing:border-box;
+
+}
+#footer_alive{
+    width: 200px;
+    margin:0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px #2690FE;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#alive_num{
+    color:  #2690FE;
+    font-size: 20px;
+}
+footer table{
+    text-align: center;
+    width: 100%;
+}
+footer tr{
+    margin-top: 20px;
+}
+footer td{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+footer table caption{
+    width: 100%;
+}
+#footer_group{
+    margin:0 auto;
+    height: 120px;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    margin-left: 480px;
+}
+#footer_contact{
+    height: 120px;
+    margin:0 auto;
+    width: 160px;
+    display: inline-block;
+    float: left;
+}
+#footer_friend_link{
+    height: 120px;
+    margin:0 auto;
+    width: 150px;
+    display: inline-block;
+    float: left;
+}
+
+#footer_contact_img_qq{
+    width: 30px;
+    height: 30px;
+}
+#footer_contact_img_phone{
+    width: 17px;
+    height: 17px;
+}
+#footer_contact_img_email{
+    width: 20px;
+    height: 20px;
+}
+
+#footer_submit_bug{
+    clear: both;
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    height: 25px;
+    width: 200px;
+    vertical-align: bottom;
+    border-radius: 5px;
+    text-align: center;
+    background: #686D77;
+    border: 1px solid #686D77;
+    box-shadow: 0px 2px 10px #686D77, 2px 4px 10px #686D77;
+
+}
+#footer_submit_bug:hover {
+  background: #d3d3d3;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 5px #686D77, 2px 4px 5px #686D77;
+  text-shadow: -1px -1px 0 #5A5E68;
+  color: gray;
+}
+#footer_submit_bug:active{
+    color:white;
+}
